@@ -74,4 +74,19 @@ router.post('/logout', function (req, res, next) {
   })
 })
 
+router.route('/bcd')
+  .get((req, res, next) => {
+    res.status(200);
+    res.json({
+      data: {},
+      description: "get success"
+    });
+  }).post((req, res, next) => {
+    res.status(200);
+    res.json({
+      data: {},
+      description: "post success"
+    });
+  })
+
 module.exports = router;
